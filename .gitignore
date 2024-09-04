@@ -1,0 +1,7 @@
+# PyCharm specific
+.idea/
+
+# Python specific
+__pycache__/
+*.py[cod]
+*.pyo

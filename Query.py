@@ -2,7 +2,7 @@ import itertools
 from steam import SteamQuery
 
 # 定义 IP 和端口列表
-server_ip = ["110.42.9.149", "110.42.9.181","110.42.9.22"]
+server_ip = ["110.42.9.149", "110.42.9.181", "110.42.9.22"]
 port = [27015, 27016]
 
 
