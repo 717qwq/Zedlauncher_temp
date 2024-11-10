@@ -17,7 +17,7 @@ class MyWindow(QMainWindow):
         self.setWindowIcon(QIcon('./icon.ico'))  # 替换为你的图标文件路径
 
         # 获取服务器信息
-        server_info = Query.ZombiEden_Server_Query()
+        server_info = Query.ZombiEden_Server_Query() + Query.EXG_Server_Query()
 
         # 创建模型
         self.model = PyqtFormModel.ServerInfoModel(server_info)
@@ -81,7 +81,7 @@ class MyWindow(QMainWindow):
         # 处理刷新按钮点击事件
         print("Refresh button clicked")
         # 重新获取数据并更新模型
-        server_info = Query.ZombiEden_Server_Query()
+        server_info = Query.ZombiEden_Server_Query() + Query.EXG_Server_Query()
         self.model = PyqtFormModel.ServerInfoModel(server_info)
         self.table_view.setModel(self.model)
         self.adjust_table_columns()
